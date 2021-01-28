@@ -46,6 +46,9 @@ section .loader .dot {
   animation: animateDot 2s linear infinite;
   animation-delay: calc(0.1s * var(--i));
 }
+section .loader:last-child .dot {
+  animation-delay: calc(-0.1s * var(--i));
+}
 @keyframes animateDot {
   0% {
     transform: scale(0.1);
