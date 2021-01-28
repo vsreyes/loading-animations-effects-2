@@ -1,15 +1,34 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-section
-{
+section {
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #001300;
+}
+section .loader {
+  position: relative;
+  display: flex;
+}
+section .loader .dot {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  margin: 20px 10px;
+  /*transform: scale(0.1);*/
+  border-radius: 50%;
+  animation: animateDot 2s linear infinite;
+}
+@keyframes animateDot {
+  0% {
+    transform: scale(0.1);
+  }
 }
